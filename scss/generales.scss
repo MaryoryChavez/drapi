@@ -1,0 +1,63 @@
+:root {
+    --amarillo: #FDCF34;
+    --naranja: #e65118;
+    --amarillo_pastel: #FFF8DC;
+    --gris_claro: #D6D6D6;
+    --comun: #232220;
+    --fuenteComun: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+body * {
+    font-family: var(--fuenteComun);
+    color: var(--comun);
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+p {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h1>.resaltado {
+    font-size: 50px;
+}
+
+.titulo,
+.subtitulo {
+    font-family: var(--fuenteComun);
+}
+
+* {
+    // outline: 1px solid rgba(252, 148, 148, 0.178);
+    box-sizing: border-box;
+}

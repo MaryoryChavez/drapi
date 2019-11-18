@@ -1,0 +1,174 @@
+#home {
+    .seccion-productos {
+        &-r {
+            .card {
+                @media screen and (max-width: 767px) {
+                    margin-top: 50px !important;
+                }
+
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .card {
+            text-align: center;
+            background: url('./img/arco.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center top;
+
+            img {
+                height: 200px;
+                width: auto;
+                margin-top: 30px;
+            }
+        }
+
+        .lista-productos {
+            .titulo-seccion {
+                border-bottom: 1px solid var(--gris_claro);
+                padding-bottom: 10px;
+                margin-bottom: 50px;
+
+                @media screen and (max-width:1023px) {
+                    margin-bottom: 10px;
+                }
+
+                @media screen and (max-width:767px) {
+                    margin-top: 40px;
+                }
+
+                div:last-child {
+                    text-align: right;
+                }
+
+                h4 {
+                    text-align: left;
+                }
+
+                .btn-vermas {
+                    font-weight: bold;
+                    background: var(--amarillo_pastel);
+                    border: 2px solid var(--amarillo_pastel);
+                    padding: 5px 20px;
+                    font-weight: 600;
+                    transition: 0.3s all;
+
+                    i {
+                        transition: 0.3s all;
+                    }
+
+                    &:hover {
+                        background: #ffffff;
+                        border-color: var(--amarillo);
+
+                        i {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .producto {
+            @media screen and (max-width:1023px) {
+                margin-top: 10px;
+            }
+
+            @media screen and (max-width:767px) {
+                margin-top: 20px;
+            }
+
+            .producto-informacion {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            .producto-informacion li {
+                list-style: none;
+            }
+
+            .producto-informacion>.nombre,
+            .producto-informacion>.precio {
+                font-size: 18px;
+                padding-bottom: 5px;
+
+                @media screen and (max-width:768px) {
+                    font-size: 16px;
+                }
+            }
+
+            .producto-informacion>.nombre {
+                width: 70%;
+                text-align: left;
+
+                @media screen and (max-width:768px) {
+                    width: 60%;
+                }
+            }
+
+            .producto-informacion>.precio {
+                width: 30%;
+                text-align: right;
+                color: var(--naranja);
+                font-weight: 700;
+
+                @media screen and (max-width:768px) {
+                    width: 40%;
+                }
+            }
+
+            .producto-informacion>.reputacion {
+                width: 100%;
+                padding: 40px 0;
+                border-top: 1px solid var(--gris_claro);
+
+                @media screen and (max-width:1023px) {
+                    padding: 10px 0;
+                }
+            }
+
+            .producto-informacion>.reputacion i {
+                color: var(--amarillo);
+                margin: 0 5px;
+            }
+
+            .producto-image-thumb {
+                text-align: center;
+            }
+
+            .producto-image-thumb img {
+                height: 140px;
+                width: auto;
+
+                @media screen and (min-width:768px) and (max-width:1023px) {
+                    height: 123px;
+                }
+
+                @media screen and (max-width:510px) {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    #banner-1,
+    #banner-2 {
+        margin: 50px 0;
+
+        img.banner {
+            width: 100%;
+            padding: 0 20px;
+
+            @media screen and (max-width:1023px) {
+                padding: 0 0;
+            }
+        }
+    }
+}

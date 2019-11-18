@@ -1,0 +1,31 @@
+#nosotros {
+    #nosotros-texto p {
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    #vision-mision {
+        margin-top: 50px;
+
+        h2 {
+            background: var(--amarillo);
+            padding: 5px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .caja {
+            transition: 0.3s all;
+            padding: 20px;
+
+            &:hover {
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+
+            }
+        }
+    }
+}

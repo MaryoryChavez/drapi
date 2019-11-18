@@ -1,0 +1,106 @@
+#footer {
+  background: var(--comun);
+  margin-top: 150px;
+  padding: 50px 0;
+
+  * {
+    color: #ffffff;
+  }
+
+  #servicios-footer {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--gris_claro);
+  }
+
+  .servicio {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    @media screen and (max-width:767px){
+      padding: 10px 0;
+    }
+    i {
+      width: 25%;
+      font-size: 40px;
+    }
+
+    .texto {
+      width: 75%;
+
+      &>span:first-child {
+        font-size: 20px;
+        display: block;
+        font-weight: 600;
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    &>li {
+      list-style: none;
+      margin: 3px 0;
+
+      &>i {
+        margin: 20px 10px 0;
+        font-size: 25px;
+      }
+    }
+  }
+
+  #datos-footer {
+    padding: 30px 0 50px;
+    >div{
+      @media screen and (max-width:767px){
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    h4 {
+      padding-bottom: 10px;
+    }
+
+    ul{
+      @media screen and (max-width:767px){
+        padding: 0 10px;
+      }
+      &>li>form {
+        margin-top: 20px;
+  
+        &>input {
+          width: 100%;
+          outline: none;
+          border: none;
+        }
+  
+        &>input[type="email"] {
+          padding: 5px;
+          color: var(--comun);
+          margin-bottom: 4px;
+        }
+  
+        &>input[type="button"] {
+          background: var(--amarillo);
+          padding: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #tarjetas-footer {
+    text-align: center;
+
+    i {
+      font-size: 30px;
+      margin: 0 10px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+  }
+}

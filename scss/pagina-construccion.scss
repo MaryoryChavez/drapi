@@ -1,0 +1,15 @@
+#pagina-construcción{
+    text-align: center;
+    margin: 100px 0;
+    h1{
+        font-size: 5em;
+        @media screen and(max-width:767px) {
+            font-size: 13vw;
+        }
+    }
+    i{
+        margin-top: 50px;
+        font-size: 7em;
+        color: var(--naranja);
+    }
+}

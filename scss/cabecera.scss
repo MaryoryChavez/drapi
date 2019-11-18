@@ -1,0 +1,25 @@
+#titulo-grande {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/banners/fondo.png);
+    height: 20em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    h1 {
+        font-size: 4em;
+        padding: 40px 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+        @media screen and (max-width:767px){
+            font-size: 3em;
+        }
+    }
+}
